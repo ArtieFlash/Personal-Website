@@ -1,0 +1,52 @@
+/* Navigation bar */
+.navbar {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid navy;
+    margin: 0;
+    background-color: #002f7a;
+    font-size: 3em;
+}
+
+.navLink {
+    color: #efe706;
+    text-decoration: none;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0;
+    width: 25%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active {
+    background-color: #efe706;
+    color: #002f7a;
+}
+
+.navLink:hover {
+    background-color: #40587e;
+    color: #efe706;
+}
+
+
+/* Page header */
+.pageTitle {
+    margin-top: 120px; /* To appear below navigation bar */
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Landing page body */
+.body {
+    font-size: 20px;
+    margin: 0 3%;
+}
