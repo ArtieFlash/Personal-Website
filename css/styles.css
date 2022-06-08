@@ -1,3 +1,4 @@
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* Navigation bar */
 .navbar {
     overflow: auto;
@@ -5,14 +6,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    border: 2px solid navy;
+    border: 1px solid red;
     margin: 0;
-    background-color: #002f7a;
-    font-size: 3em;
+    background-color: red;
 }
 
 .navLink {
-    color: #efe706;
+    color: lightgrey;
     text-decoration: none;
     float: left;
     font-size: 25px;
@@ -23,16 +23,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.active {
-    background-color: #efe706;
-    color: #002f7a;
+.activePage {
+    background-color: lightgrey;
+    color: red;
 }
 
 .navLink:hover {
-    background-color: #40587e;
-    color: #efe706;
+    background-color: lightcoral;
+    color: whitesmoke;
+    text-shadow: 2px 3px black
 }
 
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Page header */
 .pageTitle {
@@ -44,9 +46,48 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Landing page body */
 .body {
     font-size: 20px;
     margin: 0 3%;
 }
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.lifeSectionButton {
+    color: lightgrey;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    background-color: red;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lifeSectionButton:hover {
+    background-color: lightcoral;
+    color: whitesmoke;
+    text-shadow: 2px 2px black
+}
+
+.activeButton {
+    background-color: lightgrey;
+    color: red;
+}
+
+.lifeSectionButtonBar:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Life sections */
+.lifeSection {
+    border: 4px solid lightgrey;
+    padding: 5px 20px;
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */

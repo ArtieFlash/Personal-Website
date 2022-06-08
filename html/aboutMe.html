@@ -9,6 +9,7 @@
     <meta name="Description" content="Art Flachsenhar's personal website that contains his resume and links to his projects.">
 
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js"></script>
 
 </head>
 
@@ -16,33 +17,34 @@
     <!--Navigation bar-->
     <div class="navbar">
         <a class="navLink" href="index.html">Home</a>
-        <a class="navLink active" href="aboutMe.html">About Me</a>
+        <a class="navLink activePage" href="aboutMe.html">About Me</a>
         <a class="navLink" href="resume.html">Resume</a>
         <a class="navLink" href="projects.html">Projects</a>
     </div>
+
+    <!-- Page header -->
     <h1 class="pageTitle">About Me</h1>
 
-    <p>Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. 
-        Nunc consequat interdum varius sit 
-        amet mattis vulputate enim. Sed 
-        viverra ipsum nunc aliquet bibendum 
-        enim facilisis. Mollis nunc sed id 
-        semper risus. Facilisis sed odio morbi 
-        quis commodo odio. Leo a diam sollicitudin 
-        tempor id eu nisl nunc. Elementum nibh 
-        tellus molestie nunc non blandit. Tellus 
-        pellentesque eu tincidunt tortor. Ut lectus 
-        arcu bibendum at varius. Justo nec ultrices 
-        dui sapien eget. Hac habitasse platea 
-        dictumst quisque sagittis purus. A lacus 
-        vestibulum sed arcu non odio. Mauris cursus 
-        mattis molestie a iaculis at erat 
-        pellentesque adipiscing. Etiam tempor orci 
-        eu lobortis elementum nibh. Mattis rhoncus 
-        urna neque viverra justo nec ultrices dui.</p>
+    <!-- Page body -->
+    <div class="body">
+        <div class="lifeSectionButtonBar">
+            <button class="lifeSectionButton activeButton" id="earlyLifeButton" onclick="openTab('earlyLife')">Early Life</button>
+            <button class="lifeSectionButton" id="tableGamesDealerButton" onclick="openTab('tableGamesDealer')">Table Games Dealer</button>
+            <button class="lifeSectionButton" id="softwareEngineerButton" onclick="openTab('softwareEngineer')">Software Engineer</button>
+        </div>
+
+        <div id="earlyLife" class="lifeSection">
+            <p>content of early life.</p>
+        </div>
+
+        <div id="tableGamesDealer" class="lifeSection" style="display:none">
+            <p>content of table games dealer.</p>
+        </div>
+
+        <div id="softwareEngineer" class="lifeSection" style="display:none">
+            <p>content of software engineer.</p>
+        </div>
+    </div>
     </body>
 
 </html>
