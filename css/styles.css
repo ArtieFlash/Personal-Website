@@ -142,6 +142,7 @@
     .lifeSection p {
         width: 90%;
         text-align: justify;
+        padding: auto;
     }
 
     .oddImage, .evenImage {

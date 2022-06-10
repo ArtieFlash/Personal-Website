@@ -4,8 +4,16 @@ function openTab(buttonName) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"
     }
-    document.getElementById(buttonName).style.display = "block";
 
+    if (window.innerWidth <= 1000)
+    {
+        document.getElementById(buttonName).style.display = "block";
+    }
+    else
+    {
+        document.getElementById(buttonName).style.display = "grid";
+    }
+    
     x = document.getElementsByClassName("lifeSectionButton");
     for (i = 0; i < x.length; i++) {
         if (x[i].classList.contains('activeButton')) {
