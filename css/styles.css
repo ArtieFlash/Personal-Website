@@ -1,4 +1,3 @@
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* Navigation bar */
 .navbar {
     overflow: auto;
@@ -34,7 +33,6 @@
     text-shadow: 2px 3px black
 }
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Page header */
 .pageTitle {
@@ -46,36 +44,27 @@
     font-family:Arial, Helvetica, sans-serif
 }
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* Landing page body */
 .body {
     font-size: 20px;
-    margin: 0 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
 }
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-/* Life sections */
-.lifeSectionWrapper {
-    height: 75vh;
+/* Life sections button bar */
+.lifeSectionButtonBar {
+    margin: auto;
+    width: 90%;
 }
-
-.lifeSection {
-    border: 8px solid lightgrey;
-    padding: 5px 15px;
-    font-size: 5em;
-    overflow: auto;
-    height: 100%;
-}
-
 .lifeSectionButton {
     color: lightgrey;
     padding: 10px 24px;
     cursor: pointer;
     background-color: red;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -90,6 +79,37 @@
     color: red;
 }
 
+/* Clear button bar formatting */
+.lifeSectionButtonBar:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Life sections */
+.lifeSectionWrapper {
+    height: 75vh;
+    width: 90%;
+    margin: auto;
+}
+
+.lifeSection {
+    border: 8px solid lightgrey;
+    /* padding: 5px 15px; */
+    overflow: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 48.5%);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 50px 20px;
+}
+
+.grid-item {
+    width: 95%;
+    padding: 10px 0;
+}
+
 /* Responsive sizing */
 /* Wide screen */
 @media only screen and (min-width: 1000px){
@@ -102,7 +122,7 @@
 @media only screen and (max-width: 999px){
     .lifeSectionButtonBar {
         float: left;
-        width: 20%;
+        width: 30%;
     }
 
     .lifeSectionButton {
@@ -111,15 +131,18 @@
 
     .lifeSection {
         float: left;
-        width: 70%;
+        width: 60%;
+        display: block;
+        justify-content: center;
+    }
+
+    .lifeSection p {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .oddImage, .evenImage {
+        display: none;
     }
 }
 
-/* Clear button bar formatting */
-.lifeSectionButtonBar:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
