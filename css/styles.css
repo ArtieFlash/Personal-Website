@@ -143,6 +143,7 @@
         width: 90%;
         text-align: justify;
         padding: auto;
+        margin: auto;
     }
 
     .oddImage, .evenImage {
