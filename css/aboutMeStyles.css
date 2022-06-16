@@ -1,57 +1,3 @@
-/* Navigation bar */
-.navbar {
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 1px solid red;
-    margin: 0;
-    background-color: red;
-}
-
-.navLink {
-    color: lightgrey;
-    text-decoration: none;
-    float: left;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 20px 0;
-    width: 25%;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.activePage {
-    background-color: lightgrey;
-    color: red;
-}
-
-.navLink:hover {
-    background-color: lightcoral;
-    color: whitesmoke;
-    text-shadow: 2px 3px black
-}
-
-
-/* Page header */
-.pageTitle {
-    margin-top: 120px; /* To appear below navigation bar */
-    margin-left: 15%;
-    width: 70%;
-    text-align: center;
-    font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-
-/* Landing page body */
-.body {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 40px;
-}
-
 /* Life sections button bar */
 .lifeSectionButtonBar {
     margin: auto;
@@ -96,12 +42,6 @@
     border: 8px solid lightgrey;
     overflow: auto;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 48.5%);
-    grid-template-rows: repeat(4, auto);
-    justify-items: center;
-    align-items: center;
-    grid-gap: 15px;
 }
 
 .grid-item {
@@ -113,11 +53,20 @@
     text-align: right;
 }
 
-/* Responsive sizing */
+/* Responsive sizing
 /* Wide screen */
 @media only screen and (min-width: 1000px){
     .lifeSectionButton {
         float: left;
+    }
+
+    .lifeSection {
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        grid-template-rows: repeat(4, auto);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 50px 20px;
     }
 }
 
@@ -149,16 +98,4 @@
     .oddImage, .evenImage {
         display: none;
     }
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: red;
-    color: lightgrey;
-    text-align: center;
-    padding: 15px;
 }
