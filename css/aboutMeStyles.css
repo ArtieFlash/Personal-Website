@@ -1,0 +1,101 @@
+/* Life sections button bar */
+.lifeSectionButtonBar {
+    margin: auto;
+    width: 90%;
+}
+.lifeSectionButton {
+    color: lightgrey;
+    padding: 10px 24px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lifeSectionButton:hover {
+    background-color: lightcoral;
+    color: whitesmoke;
+    text-shadow: 2px 2px black
+}
+
+.activeButton {
+    background-color: lightgrey;
+    color: red;
+}
+
+/* Clear button bar formatting */
+.lifeSectionButtonBar:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Life sections */
+.lifeSectionWrapper {
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+}
+
+.lifeSection {
+    border: 8px solid lightgrey;
+    overflow: auto;
+    height: 100%;
+}
+
+.grid-item {
+    width: 95%;
+    padding: 10px 0;
+}
+
+.evenParagraph {
+    text-align: right;
+}
+
+/* Responsive sizing
+/* Wide screen */
+@media only screen and (min-width: 1000px){
+    .lifeSectionButton {
+        float: left;
+    }
+
+    .lifeSection {
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        grid-template-rows: repeat(4, auto);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 50px 20px;
+    }
+}
+
+/* Narrow screen */
+@media only screen and (max-width: 1000px){
+    .lifeSectionButtonBar {
+        float: left;
+        width: 30%;
+    }
+
+    .lifeSectionButton {
+        width: 100%;
+    }
+
+    .lifeSection {
+        float: left;
+        width: 60%;
+        display: block;
+        justify-content: center;
+    }
+
+    .lifeSection p {
+        width: 90%;
+        text-align: justify;
+        padding: auto;
+        margin: auto;
+    }
+
+    .oddImage, .evenImage {
+        display: none;
+    }
+}

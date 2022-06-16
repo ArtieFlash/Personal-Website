@@ -1,0 +1,22 @@
+#iframeWrapper {
+    margin: auto;
+    width: 850px;
+    height: 65vh;
+    border: 8px solid lightgrey;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: auto;
+}
+
+/* Responsive sizing */
+/* Narrow screen */
+@media only screen and (max-width: 1000px){
+    #iframeWrapper {
+        width: 85%;
+    }
+}
