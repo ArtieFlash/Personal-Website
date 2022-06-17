@@ -25,9 +25,3 @@ function openTab(buttonName) {
     }
     document.getElementById(buttonName+button).classList.add(activeButton);
 }
-
-// Function to resize the width of the resume iframe wrapper
-// function resizeIframeWrapper (object) {
-//     var wrapper = document.getElementById('iframeWrapper');
-//     wrapper.style.width = object.contentWindow.document.body.scrollwidth+"px";
-// }
