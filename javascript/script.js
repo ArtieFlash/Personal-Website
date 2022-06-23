@@ -25,3 +25,15 @@ function openTab(buttonName) {
     }
     document.getElementById(buttonName+button).classList.add(activeButton);
 }
+
+// Function to toggle the Contact Me form
+function toggleContact() {
+    var wrapperId = "contactMeFormWrapper";
+    var wrapper = document.getElementById(wrapperId)
+    if (wrapper.style.display == "none") {
+        wrapper.style.display = "block";
+    }
+    else {
+        wrapper.style.display = "none";
+    }
+}
