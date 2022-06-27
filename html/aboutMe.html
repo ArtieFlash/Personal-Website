@@ -189,8 +189,38 @@
         </div>
     </div>
 
-    <!-- Footer bar -->
-    <iframe id="footerFrame" src="footer.html"></iframe>
+       <!-- Footer bar -->
+       <div class="footer">
+        <a id="linkedIn" href="https://www.linkedin.com/in/art-flachsenhar-b0904820b" target="_blank">Visit my LinkedIn profile</a>
+        <button id="contactMeButton" onclick="toggleContact()">Contact me</button>
+    </div>
+
+    <div id="contactMeFormWrapper" style="display: none">
+        <form action="#"> <!-- Send to Azure Function -->
+
+            <button id="closeContactMeForm" onclick="toggleContact()">X</button>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="emailAddress" name="emailAddress">
+
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" placeholder="(Optional)">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Please type your message"></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
     </body>
 
 </html>

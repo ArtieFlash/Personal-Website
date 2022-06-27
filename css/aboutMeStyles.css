@@ -4,10 +4,10 @@
     width: 90%;
 }
 .lifeSectionButton {
-    color: lightgrey;
+    color: red;
     padding: 10px 24px;
     cursor: pointer;
-    background-color: red;
+    background-color: lightgrey;
     border: none;
     font-size: 24px;
     font-weight: bold;
@@ -20,8 +20,8 @@
 }
 
 .activeButton {
-    background-color: lightgrey;
-    color: red;
+    background-color: red;
+    color: lightgrey;
 }
 
 /* Clear button bar formatting */
