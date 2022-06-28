@@ -28,7 +28,7 @@
     <h1 id="pageTitle">About Me</h1>
 
     <!-- Page body -->
-    <div class="body">
+    <div id="body">
         <div class="lifeSectionButtonBar">
             <button class="lifeSectionButton activeButton" id="earlyLifeButton" onclick="openTab('earlyLife')">Early Life</button>
             <button class="lifeSectionButton" id="tableGamesDealerButton" onclick="openTab('tableGamesDealer')">Table Games Dealer</button>
@@ -190,13 +190,13 @@
     </div>
 
        <!-- Footer bar -->
-       <div class="footer">
+       <div id="footer">
         <a id="linkedIn" href="https://www.linkedin.com/in/art-flachsenhar-b0904820b" target="_blank">Visit my LinkedIn profile</a>
         <button id="contactMeButton" onclick="toggleContact()">Contact me</button>
     </div>
 
     <div id="contactMeFormWrapper" style="display: none">
-        <form action="#"> <!-- Send to Azure Function -->
+        <form method="post" action="">
 
             <button id="closeContactMeForm" onclick="toggleContact()">X</button>
 
