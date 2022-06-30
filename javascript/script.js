@@ -28,8 +28,7 @@ function openTab(buttonName) {
 
 // Function to toggle the Contact Me form
 function toggleContact() {
-    var wrapperId = "contactMeFormWrapper";
-    var wrapper = document.getElementById(wrapperId)
+    var wrapper = document.getElementById("contactMeFormWrapper")
     if (wrapper.style.display == "none") {
         wrapper.style.display = "block";
     }
