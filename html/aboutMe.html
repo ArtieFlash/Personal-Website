@@ -195,11 +195,18 @@
         <button id="contactMeButton" onclick="toggleContact()">Contact me</button>
     </div>
 
+    <!-- Contact me popup -->
     <div id="contactMeFormWrapper" style="display:none">
         <button id="closeContactMeForm" onclick="toggleContact()">X</button>
 
+        <!-- Empty iframe to prevent redirection in form sumbission -->
+        <iframe name="dummyFrame" style="display:none"></iframe>
+
         <!-- Use FormSubmit.co to send the email from form submission -->
-        <form action="https://formsubmit.co/2e346be84c4c817830a93470f21b6892" method = "POST">
+        <form action="https://formsubmit.co/2e346be84c4c817830a93470f21b6892" 
+                method = "POST"
+                target="dummyFrame">
+
             <!-- Honeypot -->
             <input type="text" name="_honey" style="display:none">
 
@@ -221,8 +228,17 @@
             <label for="message">Message</label>
             <textarea id="message" name="Message" placeholder="Please type your message" required></textarea>
 
-            <input id="submit" type="submit" value="Submit">
+            <input id="submit" 
+                    type="submit" 
+                    value="Submit" 
+                    onclick="confirmSubmission()">
         </form>
+    </div>
+
+    <!-- Thank you message -->
+    <div id="thankYouMessage" style="display:none">
+        <h1>Thank you!</h1>
+        <p>You message has been sent.</p>
     </div>
     </body>
 

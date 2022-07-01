@@ -152,3 +152,22 @@ input[type=submit]:hover {
     cursor: pointer;
   }
 
+  /* Thank you message */
+  #thankYouMessage {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    margin: 0 200px;
+    padding: 15px;
+    border: 4px solid lightgrey;
+    background-color: red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgrey;
+    text-align: center;
+  }
+
+#thankYouMessage p {
+    font-size: 14px;
+}
