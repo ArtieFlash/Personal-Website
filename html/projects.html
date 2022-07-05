@@ -47,6 +47,56 @@
         urna neque viverra justo nec ultrices dui.</p>
     
     <!-- Footer bar -->
+    <div id="footer">
+        <a id="linkedIn" href="https://www.linkedin.com/in/art-flachsenhar-b0904820b" target="_blank">Visit my LinkedIn profile</a>
+        <button id="contactMeButton" onclick="toggleContact()">Contact me</button>
+    </div>
+
+    <!-- Contact me popup -->
+    <div id="contactMeFormWrapper" style="display:none">
+        <button id="closeContactMeForm" onclick="toggleContact()">X</button>
+
+        <!-- Empty iframe to prevent redirection in form sumbission -->
+        <iframe name="dummyFrame" style="display:none"></iframe>
+
+        <!-- Use FormSubmit.co to send the email from form submission -->
+        <form action="https://formsubmit.co/2e346be84c4c817830a93470f21b6892" 
+                method = "POST"
+                target="dummyFrame">
+
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display:none">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Name</label>
+            <input type="text" name="Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="text" name="Email&nbsp;Address" required>
+
+            <label for="companyName">Company Name</label>
+            <input type="text" name="Company&nbsp;Name" placeholder="(Optional)">
+
+            <label for="subject">Subject</label>
+            <input type="text" name="Subject" placeholder="What is this regarding?" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" placeholder="Please type your message" required></textarea>
+
+            <input id="submit" 
+                    type="submit" 
+                    value="Submit" 
+                    onclick="confirmSubmission()">
+        </form>
+    </div>
+
+    <!-- Thank you message -->
+    <div id="thankYouMessage" style="display:none">
+        <h1>Thank you!</h1>
+        <p>You message has been sent.</p>
+    </div>
     
     </body>
 
