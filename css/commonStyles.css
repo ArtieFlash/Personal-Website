@@ -35,7 +35,7 @@
 
 /* Page header */
 #pageTitle {
-    margin: 75px auto 25px auto;
+    margin: 100px auto 25px auto;
     width: auto;
     text-align: center;
     font-size: 50px;
@@ -45,13 +45,41 @@
 }
 
 
-/* Landing page body */
+/* Page body */
 #body {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 40px;
+    text-align: left;
+    margin: auto 50px;
 }
 
+#body a {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  text-shadow: 2px 2px lightgrey;
+}
+
+#body blockquote {
+  text-align: center;
+  font-style: oblique;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 600;
+  width: 40%;
+  margin: 25px auto;
+  padding: 30px;
+  color: red;
+  text-shadow: 1px 1px lightgrey, 
+              1px -1px lightgrey,
+              -1px 1px lightgrey,
+              -1px -1px lightgrey;
+  background-image: linear-gradient(to bottom right, black, slategrey);
+  border-radius: 25px;
+}
+
+/* Footer bar */
 #footer {
     position: fixed;
     bottom: 0;
